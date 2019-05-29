@@ -1,0 +1,23 @@
+GET http://127.0.0.1:8090/saludar
+content-type: application/text
+
+###
+
+GET http://127.0.0.1:8090/urlProductoJSON HTTP/1.1
+content-type: application/json
+
+{
+    "login": "aaa",
+    "password": "111"
+}
+
+###
+
+POST http://127.0.0.1:8090/urlProductoXML HTTP/1.1
+content-type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<usuario>
+  <login>bbb</login>
+  <password>222</password>
+</usuario>
